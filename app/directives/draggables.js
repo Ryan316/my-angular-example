@@ -34,10 +34,8 @@ searchApi.directive('myAnimation', ['$document', function ($document) {
         }
 
 	    element.on("mouseenter", function () {
-		    $(this).stop();
             $("#" + this.id + " .title").stop().animate({"margin-top": "-3px"}, 300);
 		}).on("mouseleave", function () {
-		    $(this).stop();
 		    $("#" + this.id + " .title").stop().animate({"margin-top": "50px"}, 300);
 		});
 
