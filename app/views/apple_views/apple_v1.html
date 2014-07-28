@@ -1,0 +1,16 @@
+
+<h1>Apple Search API - Page 1</h1>
+<div id="placeHolder">
+    <input id="search" type="text" ng-model="textValue" ng-change="fetch()" />
+    <a href="" id="submit" ng-click="fetch()">Search</a>
+</div>
+<div id="mainCont">
+    <ul id="resultsContainer">
+        <li id="{{ $index + 1 }}" ng-repeat="list in lists | orderBy:'artistName' | limitTo:limit" my-Animation="">
+            <img ng-src="{{ list.artworkUrl100 }}">
+            <div class="title">{{ list.artistName }}</div>
+        </li>
+    </ul>
+    <a href="" id="more" ng-click="viewMore()">View More</a>
+    <a href="#/view2" class="page">Go to Page 2</a>
+</div>
