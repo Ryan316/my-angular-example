@@ -23,11 +23,10 @@ var ajax = function () {
             $scope.response = response.results || "Request failed";
             $scope.status = status;
         });
-
     }
    
     return {
-        searchKeyword: searchKeyword
+        searchKeyword : searchKeyword
     }
     
 return ajax;

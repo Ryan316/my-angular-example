@@ -17,7 +17,7 @@ searchApi.service('modelService', function () {
     	// renders 28 more results then hides 'view more button' if limit is reached
     	if ($scope.lists.length > 28) {
             $scope.limit += 28;
-        if ($scope.limit > $scope.lists.length) {
+            if ($scope.limit > $scope.lists.length) {
                 $('#more').hide();
             }
         }
