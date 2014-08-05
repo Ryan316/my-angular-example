@@ -33,11 +33,11 @@ searchApi.directive('myAnimation', ['$document', function ($document) {
             $document.unbind('mouseup', mouseup);
         }
 
-	element.on("mouseenter", function () {
-           $("#" + this.id + " .title").stop().animate({"margin-top": "-3px"}, 300);
-	}).on("mouseleave", function () {
-	    $("#" + this.id + " .title").stop().animate({"margin-top": "50px"}, 300);
-	});
+		element.on("mouseenter", function () {
+	           $("#" + this.id + " .title").stop().animate({"margin-top": "-3px"}, 300);
+		}).on("mouseleave", function () {
+		    $("#" + this.id + " .title").stop().animate({"margin-top": "50px"}, 300);
+		});
 
     };
 
